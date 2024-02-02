@@ -1,0 +1,23 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1)
+    padding-inline: 4rem
+    padding-block: 2rem
+    h1
+        margin: 0
+    .btn_darkMode
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 0.5rem
+        cursor: pointer
+.App.darkMode
+    .btn_darkMode
+        img
+            filter: invert(1)
+@media screen and ( max-width: 768px )
+    .header
+        padding: 2rem
+        flex-direction: column

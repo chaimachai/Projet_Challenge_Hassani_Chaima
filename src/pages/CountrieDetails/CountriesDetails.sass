@@ -1,0 +1,61 @@
+.btnBack
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 0.5rem
+    cursor: pointer
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.4)
+    padding: 0.5rem
+    border-radius: 5px
+    place-self: start
+    margin-bottom: 2rem
+    p
+        margin: 0
+.countriesDetails
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 2rem
+    width: 100%
+    img
+        width: 100%
+.details
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-direction: column
+.div_details
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    gap: 2rem
+    width: 50%
+.borders
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    gap: 1rem
+    button
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.2)
+        background-color: white
+        border: none
+        padding: 1rem
+        cursor: pointer
+        border-radius: 5px
+.App.darkMode
+    .btnBack
+        img
+            filter: invert(1)
+    .borders button
+        color: white
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.4)
+        background-color: rgb(43, 55, 67)
+@media screen and ( max-width: 768px )
+    .countriesDetails
+        grid-template-columns: 1fr
+    .div_details
+        flex-direction: column
+        gap: 0
+// @media screen and ( max-width: 1200px ) and ( min-width: 769px ) 
+//     .countries
+//         grid-template-columns: 1fr 1fr
+    
