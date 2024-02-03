@@ -8,11 +8,12 @@ import CountriesDetails from './pages/CountrieDetails/CountriesDetails';
 
 function App() {
   const [dark, setDark] = useState(false)
-  const [page, setPage] = useState(0)
+  const [page, setPage] = useState(1)
   const [data, setData] = useState([])
+  const [dataF, setDataF] = useState(data)
   useEffect(()=>{
     axios.get("https://restcountries.com/v3.1/all")
-    .then((response) => {setData(response.data)})
+    .then((response) => {setData(response.data); setDataF(response.data)})
     .catch((error) => console.log(error))
   },[])
   const router = createBrowserRouter([
@@ -28,7 +29,7 @@ function App() {
       children: [
         {
           path: "",
-          element: <Countries data={data} />
+          element: <Countries setDataF={setDataF} dataF={dataF} data={data} page={page} setPage={setPage} />
         },
         {
           path: ":name",

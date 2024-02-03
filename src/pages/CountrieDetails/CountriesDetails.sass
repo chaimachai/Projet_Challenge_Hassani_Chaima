@@ -17,7 +17,10 @@
     gap: 2rem
     width: 100%
     img
-        width: 100%
+        place-self: center
+        max-width: 100%
+        min-width: 500px
+        // height: 
 .details
     display: flex
     justify-content: flex-start
@@ -52,10 +55,27 @@
 @media screen and ( max-width: 768px )
     .countriesDetails
         grid-template-columns: 1fr
+        img
+            max-width: 100%
+            min-width: 200px
+        h2
+            place-self: center
     .div_details
         flex-direction: column
         gap: 0
-// @media screen and ( max-width: 1200px ) and ( min-width: 769px ) 
-//     .countries
-//         grid-template-columns: 1fr 1fr
+        width: 100%
+    .borders
+        align-items: flex-start
+        flex-direction: column
+@media screen and ( max-width: 1200px ) and ( min-width: 769px ) 
+    .countriesDetails
+        grid-template-columns: 1fr
+        h2
+            place-self: center
+    .div_details
+        width: 100%
+        justify-content: space-around
+    .borders
+        width: 100%
+        justify-content: center
     

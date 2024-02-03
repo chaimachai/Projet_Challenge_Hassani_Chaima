@@ -15,10 +15,13 @@
         border: none
         box-shadow: 0 0 2px 0 rgba(0,0,0,0.2)
         padding: 1rem
+        border-radius: 5px
+        cursor: pointer
 .countries
     display: grid
     grid-template-columns: repeat(4,1fr)
     gap: 2rem
+    width: 100%
 .country
     background-color: white
     border-radius: 5px
@@ -35,6 +38,34 @@
         align-items: flex-start
         flex-direction: column
         height: 55%
+.pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 1rem
+    margin-top: 2rem
+    .carouselItems
+        display: grid
+        width: 7rem
+        gap: 0.5rem
+        overflow: hidden
+        scroll-snap-type: x mandatory
+        // scroll-behavior: smooth
+    button
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.1)
+        border: none
+        background-color: white
+        padding: 1rem
+        border-radius: 5px
+        cursor: pointer
+        &.item
+            width: 2rem
+            height: 2rem
+            display: grid
+            place-content: center
+            scroll-snap-align: start
+        &.actif
+            background-color: red
 .App.darkMode
     .select_input
         input, select
@@ -45,7 +76,12 @@
     .country
         box-shadow: 0 0 4px 0 rgba(0,0,0,0.2)
         background-color: rgb(43, 55, 67)
-
+    .pagination button
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.2)
+        background-color: rgb(43, 55, 67)
+        color: white
+        &.actif
+            background-color: red
 @media screen and ( max-width: 768px )
     .countries
         grid-template-columns: 1fr
