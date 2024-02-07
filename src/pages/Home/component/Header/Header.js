@@ -8,7 +8,7 @@ export default function Header({dark, setDark}) {
             <h1>Where in the world?</h1>
             <div className='btn_darkMode' onClick={()=>setDark(!dark)} >
                 <img src={moon} alt="moon" />
-                <p>DarkMode</p>
+                <p>{dark ? "LightMode" : "DarkMode"} </p>
             </div>
         </div>
     )

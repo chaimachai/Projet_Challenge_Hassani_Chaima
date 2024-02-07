@@ -2,6 +2,7 @@ import React from 'react'
 import "./CountriesDetails.sass"
 import {useNavigate, useParams} from "react-router-dom"
 import arrow from "../../assets/img/arrow.svg"
+import PageError from '../PageError/PageError'
 
 export default function CountriesDetails({data}) {
     const navigate = useNavigate()
@@ -40,6 +41,7 @@ export default function CountriesDetails({data}) {
                 </div>
             </div>
         }
+        {item === undefined && <PageError />}
     </>
     
 }
