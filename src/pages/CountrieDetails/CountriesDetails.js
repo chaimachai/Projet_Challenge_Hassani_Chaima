@@ -14,21 +14,21 @@ export default function CountriesDetails({data}) {
         </div>
         {item !== undefined &&
             <div className='countriesDetails'>
-                <img src={item?.flags.png} alt={item?.flags.alt} />
+                <img src={item.flags.png} alt={item.flags.alt} />
                 <div className="details">
-                    <h2>{item?.name.common}</h2>
+                    <h2>{item.name.common}</h2>
                     <div className='div_details'>
                         <div>
-                            <p>Native Name: {item?.name.nativeName[Object.keys(item.name.nativeName)[0]].common}</p>
+                            <p>Native Name: {item.name.nativeName[Object.keys(item.name.nativeName)[0]].common}</p>
                             <p>Population: {item?.population}</p>
-                            <p>Region: {item?.region}</p>
-                            <p>Sub Region: {item?.subregion}</p>
-                            <p>Capital: {item?.capital}</p>
+                            <p>Region: {item.region}</p>
+                            <p>Sub Region: {item.subregion}</p>
+                            <p>Capital: {item.capital}</p>
                         </div>
                         <div>
-                            <p>Top Level Domain: {item?.tld}</p>
-                            <p>Currencies: {item?.currencies[Object.keys(item.currencies)[0]].name}</p>
-                            <p>Languages: {item?.languages[Object.keys(item.languages)[0]]}</p>
+                            <p>Top Level Domain: {item.tld}</p>
+                            <p>Currencies: {item.currencies[Object.keys(item.currencies)[0]].name}</p>
+                            <p>Languages: {item.languages[Object.keys(item.languages)[0]]}</p>
                         </div>
                     </div>
                     <div className='borders'>

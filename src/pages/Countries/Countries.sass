@@ -4,8 +4,17 @@
     align-items: center
     width: 100%
     margin-bottom: 2rem
+    .search
+        position: relative
+        img
+            position: absolute
+            width: 1.5rem
+            left: 0.75rem
+            top: 50%
+            transform: translate(0,-50%)
     input
         padding: 1rem
+        padding-left: 2.5rem
         width: 20vw
         min-width: 160px
         box-shadow: 0 0 2px 0 rgba(0,0,0,0.2)
@@ -68,6 +77,8 @@
             background-color: red
 .App.darkMode
     .select_input
+        .search img
+            filter: invert(1)
         input, select
             background-color: rgb(43, 55, 67)
             color: white

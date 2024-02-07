@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.sass';
-import {RouterProvider, createBrowserRouter, Outlet} from "react-router-dom"
+import {RouterProvider, createBrowserRouter} from "react-router-dom"
 import axios from "axios"
-import Header from './component/Header/Header';
+import Home from './pages/Home/Home';
 import Countries from './pages/Countries/Countries';
 import CountriesDetails from './pages/CountrieDetails/CountriesDetails';
 
@@ -11,6 +11,7 @@ function App() {
   const [page, setPage] = useState(1)
   const [data, setData] = useState([])
   const [dataF, setDataF] = useState(data)
+  document.body.setAttribute("data-theme","test")
   useEffect(()=>{
     axios.get("https://restcountries.com/v3.1/all")
     .then((response) => {setData(response.data); setDataF(response.data)})
@@ -19,13 +20,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/", 
-      element: 
-        <>
-          <Header dark={dark} setDark={setDark} />
-          <div className="main">
-            <Outlet />
-          </div>
-        </>,
+      element: <Home dark={dark} setDark={setDark} /> ,
       children: [
         {
           path: "",

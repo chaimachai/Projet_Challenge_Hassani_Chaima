@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.sass"
-import moon from "../../assets/img/moon.svg"
+import moon from "../../../../assets/img/moon.svg"
 
 export default function Header({dark, setDark}) {
     return (
