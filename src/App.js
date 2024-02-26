@@ -17,6 +17,7 @@ function App() {
     .then((response) => {setData(response.data); setDataF(response.data)})
     .catch((error) => console.log(error))
   },[])
+  
   const router = createBrowserRouter([
     {
       path: "/", 
@@ -34,7 +35,7 @@ function App() {
     }
   ])
   return <div className={`App ${dark ? "darkMode" : null}`}>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} data-theme="dark" />
   </div>
 }
 
