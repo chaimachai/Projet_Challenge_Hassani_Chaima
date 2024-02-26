@@ -8,6 +8,7 @@ export default function Home({dark, setDark}) {
         <Header dark={dark} setDark={setDark} />
         <div className="main">
             <Outlet />
+            
         </div>
     </>
 }
