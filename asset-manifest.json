@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.b72cfd34.css",
-    "main.js": "/static/js/main.19aa96d3.js",
-    "static/js/592.ea79053a.chunk.js": "/static/js/592.ea79053a.chunk.js",
-    "index.html": "/index.html",
-    "static/media/moon.svg": "/static/media/moon.ac242035113dd83abc65e1dd61701e42.svg",
-    "static/media/arrow.svg": "/static/media/arrow.503fa37cc9622e811b607d4ac7d209a1.svg",
-    "static/media/search.svg": "/static/media/search.4f49616fb919f331d380d180d033a24d.svg",
-    "main.b72cfd34.css.map": "/static/css/main.b72cfd34.css.map",
-    "main.19aa96d3.js.map": "/static/js/main.19aa96d3.js.map",
-    "592.ea79053a.chunk.js.map": "/static/js/592.ea79053a.chunk.js.map"
+    "main.css": "/Projet_Challenge_Hassani_Chaima/static/css/main.b72cfd34.css",
+    "main.js": "/Projet_Challenge_Hassani_Chaima/static/js/main.dabe78be.js",
+    "static/js/592.ea79053a.chunk.js": "/Projet_Challenge_Hassani_Chaima/static/js/592.ea79053a.chunk.js",
+    "index.html": "/Projet_Challenge_Hassani_Chaima/index.html",
+    "static/media/moon.svg": "/Projet_Challenge_Hassani_Chaima/static/media/moon.ac242035113dd83abc65e1dd61701e42.svg",
+    "static/media/arrow.svg": "/Projet_Challenge_Hassani_Chaima/static/media/arrow.503fa37cc9622e811b607d4ac7d209a1.svg",
+    "static/media/search.svg": "/Projet_Challenge_Hassani_Chaima/static/media/search.4f49616fb919f331d380d180d033a24d.svg",
+    "main.b72cfd34.css.map": "/Projet_Challenge_Hassani_Chaima/static/css/main.b72cfd34.css.map",
+    "main.dabe78be.js.map": "/Projet_Challenge_Hassani_Chaima/static/js/main.dabe78be.js.map",
+    "592.ea79053a.chunk.js.map": "/Projet_Challenge_Hassani_Chaima/static/js/592.ea79053a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b72cfd34.css",
-    "static/js/main.19aa96d3.js"
+    "static/js/main.dabe78be.js"
   ]
 }
