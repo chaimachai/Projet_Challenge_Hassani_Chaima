@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.sass';
-import {RouterProvider, createBrowserRouter} from "react-router-dom"
+import {RouterProvider, createHashRouter} from "react-router-dom"
 import axios from "axios"
 import Home from './pages/Home/Home';
 import Countries from './pages/Countries/Countries';
@@ -18,7 +18,7 @@ function App() {
     .catch((error) => console.log(error))
   },[])
   
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/", 
       element: <Home dark={dark} setDark={setDark} /> ,
@@ -32,6 +32,10 @@ function App() {
           element: <CountriesDetails data={data} />
         }
       ]
+    },
+    {
+      path: "/test",
+      element: <h1>test</h1>
     }
   ])
   return <div className={`App ${dark ? "darkMode" : null}`}>
